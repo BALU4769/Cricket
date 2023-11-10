@@ -1,0 +1,23 @@
+.svg
+{
+    position: relative;
+}
+.svg img
+{
+    width: 1520px;
+    height: 640px;
+}
+.search
+{
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}
+
+
+.search input[type="text"]
+{
+
+	width: 67%;
+	padding: 10px 10px;
+}

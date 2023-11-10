@@ -1,0 +1,14 @@
+.login-all
+
+{
+    background-image: url('../images/image09.jpeg'); 
+    background-size: cover;
+    height: 80vh;
+    width: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 160px;
+    padding-top: 140px;
+
+    
+}

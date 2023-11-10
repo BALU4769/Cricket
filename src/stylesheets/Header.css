@@ -1,0 +1,45 @@
+/* .navbar
+{
+   background-color: rgb(30, 24, 66);
+   display: flex;
+   gap: 100px;
+   padding: 12px 0px;
+}
+.dash
+{
+    display: flex;
+}
+.dashboard
+{
+   color: white;
+   font-size:x-large;
+   padding-top: 3px;
+}
+
+.navbar li
+{
+    
+    list-style: none;
+    text-decoration: none;
+    font-size: large;
+    color: white;
+
+    
+}
+li:nth-child(1)
+{  
+    font-size:x-large;
+}
+li:nth-child(2)
+{
+    margin-left: 300px;
+}
+li:nth-child(4)
+{
+    margin-left: 300px;
+}
+li:not(:first-child)
+{
+    line-height: 2;
+}
+ */
