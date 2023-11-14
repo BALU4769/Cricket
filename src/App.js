@@ -10,6 +10,7 @@ import body from './pages/Body';
 import Run from './pages/Run';
 import Map from './pages/Map';
 import Mapfunction from './pages/Mapfunction';
+import Loginform from './pages/Loginform';
 
 
 
@@ -20,18 +21,20 @@ function App() {
     <div className="App">
      <Router>
       <Routes>
-        {/* <Route path='/' element={<Home/>}/>
+          {/* <Route path='/Home' element={<Home/>}/>
         <Route path='/Header' element={<Header/>}/>
         <Route path='/Navbar' element={<Navbar/>}/>
         <Route path='/Login' element={<Login/>}/> 
-        // <Route path='/' element={<Registration/>}/>
-        {/* <Route path='/Login' element={<Login/>}/> */} 
-        {/* <Route path='/body' element={<body/>}/>
-        <Route path='/Run' element={<Run/>}/> */}
-        
-        <Route path='/' element={<Mapfunction/>}/>
-        {/* <Route path='/' element={<Map/>}/> */}
+        <Route path='/' element={<Registration/>}/>
 
+
+        <Route path='/body' element={<body/>}/>
+        <Route path='/Run' element={<Run/>}/>  */}
+        
+        {/* <Route path='/' element={<Mapfunction/>}/> */}
+        {/* <Route path='/' element={<Map/>}/> */}
+        <Route path='/' element={<Loginform/>}/>
+    
       </Routes>
      </Router>
     </div>
