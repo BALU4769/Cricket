@@ -10,7 +10,7 @@ import body from './pages/Body';
 import Run from './pages/Run';
 import Map from './pages/Map';
 import Mapfunction from './pages/Mapfunction';
-import Loginform from './pages/Loginform';
+import RegistrationPage from './pages/RegistrationPage';
 
 
 
@@ -26,14 +26,16 @@ function App() {
         <Route path='/Navbar' element={<Navbar/>}/>
         <Route path='/Login' element={<Login/>}/> 
         <Route path='/' element={<Registration/>}/>
-
-
         <Route path='/body' element={<body/>}/>
         <Route path='/Run' element={<Run/>}/>  */}
         
         {/* <Route path='/' element={<Mapfunction/>}/> */}
         {/* <Route path='/' element={<Map/>}/> */}
-        <Route path='/' element={<Loginform/>}/>
+
+        <Route path="/" element={<RegistrationPage/>}/>
+
+
+       
     
       </Routes>
      </Router>

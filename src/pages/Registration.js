@@ -8,7 +8,7 @@ import image09 from "../images/image09.jpeg";
 const Registration = () => {
   const navigate = useNavigate();
 
-  const [formdata, setformdata] = useState({
+  const [formdata,setformdata] = useState({
     firstName: "",
     lastName: "",
     emailAddress: "",
