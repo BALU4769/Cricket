@@ -32,7 +32,7 @@ const Login = () => {
               navigate('/Home', {state:{ Submiteddata: loginData}});
             }
             else{
-                alert("Worng Credencials")
+                alert("Worng Credentials")
               navigate('/Registration')
             }
           }

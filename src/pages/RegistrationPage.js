@@ -1,15 +1,21 @@
 import React, { useState } from "react";
 import "../stylesheets/Registration.css";
+import axios from "axios";
 
 const RegistrationPage = () => {
   const [formData, setFormData] = useState({
     username: "",
     email: "",
     password: "",
+    dateOfBirth:"",
+    gender:"",
     confirmPassword: "",
   });
 
   const [errors, setErrors] = useState({});
+  const [submitting , setSubmitting] = useState(false);
+  const [error, setError] = useState('');
+  
 
   const validateForm = () => {
     let isValid = true;
@@ -70,16 +76,30 @@ const RegistrationPage = () => {
     return isValid;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (validateForm()) {
-      // Perform registration logic here
-      console.log("Registration successful!", formData);
-      // You can send the form data to the server or perform other actions as needed
-    } else {
-      console.log("Form validation failed");
+    setSubmitting(true);
+    try {
+      // Send the form data to the server
+      const response = await axios.post('http://localhost:5000/registration', formData);
+      console.log(response.data);
+      setError('');
+      alert('Login successfully.');
+    } catch (error) {
+      console.error(error);
+      setError('Internal Server Error');
+    } finally {
+      setSubmitting(false);
     }
+
+    // if (validateForm()) {
+    //   // Perform registration logic here
+    //   console.log("Registration successful!", formData);
+    //   // You can send the form data to the server or perform other actions as needed
+    // } else {
+    //   console.log("Form validation failed");
+    // }
+
   };
 
 

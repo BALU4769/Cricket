@@ -24,9 +24,11 @@ function App() {
           {/* <Route path='/Home' element={<Home/>}/>
         <Route path='/Header' element={<Header/>}/>
         <Route path='/Navbar' element={<Navbar/>}/>
-        <Route path='/Login' element={<Login/>}/> 
-        <Route path='/' element={<Registration/>}/>
-        <Route path='/body' element={<body/>}/>
+        <Route path='/Login' element={<Login/>}/>  */}
+        
+        {/* <Route path='/' element={<Registration/>}/> */}
+
+        {/* <Route path='/body' element={<body/>}/>
         <Route path='/Run' element={<Run/>}/>  */}
         
         {/* <Route path='/' element={<Mapfunction/>}/> */}
